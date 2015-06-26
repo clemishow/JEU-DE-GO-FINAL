@@ -1,0 +1,438 @@
+/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	body {
+		background: #0B1228;
+		font-family: 'Open Sans';
+		font-size: 18px;
+	}
+
+	#header{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+
+	/* POP UP */
+
+	#popup {
+		width: 600px;
+		height: 420px;
+		background-color: black;
+		position: relative;
+		margin: 0 auto;
+		z-index: 99999999999;
+		opacity: 0.7;
+		top: -50px;
+	}
+
+	#popup_team {
+		width: 80%;
+		height: 40%;
+		background-color: black;
+		position: relative;
+		margin: 0 auto;
+		z-index: 99999999999;
+		top: -50px;
+	}
+
+	#popup_rules {
+		width: 50%;
+		height: 60%;
+		background-color: black;
+		position: relative;
+		margin: 0 auto;
+		z-index: 99999999999;
+		opacity: 0.7;
+		top: -50px;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background: white;
+		padding: 30% 0 0 0;
+	}
+	#section2{
+		background-image: url(imgs/bg.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/bg.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+	#section {
+		background: #0B1228;
+	}
+
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/../testbgG.jpg);
+		background-size:  100%;
+		background-repeat: no-repeat;
+		padding: 6% 0 0 0;
+		position: relative;
+		top: 7.5px;	
+
+	}
+
+	#slide2{
+		background-image: url(imgs/../background.jpg);
+		background-size:  100%;
+		background-repeat: no-repeat;
+		padding: 6% 0 0 0;
+	}
+	#slide3{
+		background-image: url(imgs/../testbgG2.jpg);
+		background-size:  100%;
+		background-repeat: no-repeat;
+		padding: 6% 0 0 0;
+		position: relative;
+		top: 7.5px;
+	}
+
+	#logo, #logo_black {
+		z-index: 999999;
+		transition: 300ms all;
+		position: absolute;
+		margin-left: -100px;
+		cursor: pointer;
+	}
+
+	#logo {
+		webkit-animation-delay: 500ms;
+		opacity: 0;
+		width: 136px;
+	}
+
+	#logo_black {
+		opacity: 0;
+	}
+
+	#click_logo {
+		transition: 300ms all;
+	}
+
+	/* TEAM */
+
+	#pos_member {
+		margin-left: calc(4% - 50px);
+		padding: 10px;
+	}
+
+	#member {
+		display: inline-block;
+	}
+
+	.photo {
+		width: 150px;
+		height: 150px;
+		padding: 16px;
+		-webkit-filter: grayscale(1);
+  		filter: grayscale(1);
+  		transition: 500ms all;
+  		cursor: pointer;
+	}
+
+	.photo:hover {
+		-webkit-filter: grayscale(0);
+  		filter: grayscale(0);
+  		transition: 500ms all;
+	}
+
+	.name {
+		color: white;
+		text-transform: uppercase;
+		font-size: 15px;
+	}
+
+	.role {
+		color: white;
+		font-size: 12px;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	/* NUAGE */
+	#nuage_1, #nuage_2, #nuage_3 {
+		width: 100%;
+		position: fixed;
+    	bottom: 0;
+    	display: block;
+    	text-align: center;
+	}
+
+	#animation_nuage_1 {
+		position: relative;
+		z-index: 99;
+		bottom: 350px;
+		left: -900px;
+		-webkit-animation: animation_nuage_1 45s infinite linear;
+		-webkit-animation-delay: 10s;
+	}
+
+	#animation_nuage_2 {
+		position: relative;
+		z-index: 99999;
+		bottom: 300px;
+		left: 0px;
+		-webkit-animation: animation_nuage_1 55s infinite linear;
+	}
+
+	#animation_nuage_3 {
+		position: relative;
+		z-index: 99;
+		bottom: 450px;
+		left: -900px;
+		-webkit-animation: animation_nuage_1 50s infinite linear;
+	}
+
+	.pos_nuage1 {
+		top: 0px;
+	}
+
+	@-webkit-keyframes animation_nuage_1 {
+		0% {
+			left: -1500px;
+		}
+
+		100% {
+			left: 1850px;
+		}
+	}
+
+	#nuage_down_right {
+		width: 30%;
+		position: fixed;
+    	bottom: 0;
+    	display: block;
+    	text-align: center;
+		z-index: 9999999999999999999999999999;
+	}
+
+
+	#nuage_down_left {
+		width: 30%;
+		position: fixed;
+    	bottom: 0;
+    	display: block;
+		right: 0;
+		z-index: 9999999999999999999999999999;
+	}
+
+	#play, #rules, #team, #home {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: white;
+		font-size: 22px;
+	}
+
+	#play {
+		position: relative;
+		top: 50px;
+		display: none;
+		padding: 8px;
+		border: solid 2px white;
+		width: 100px;
+		transtion: 300ms all;
+		margin: 0 auto;
+	}
+
+	#play:hover {
+		color: black;
+		background-color: white;
+	}
+
+	#rules {
+		position: relative;
+		left: 170px;
+		top: 30px;
+		opacity: 0;
+		transition: 300ms all;
+	}
+
+	#team {
+		position: relative;
+		left: -170px;
+		top: 30px;
+		opacity: 0;
+		transition: 300ms all;
+	}
+
+	#home {
+		position: relative;
+		left: 2px;
+		top: 65px;
+		opacity: 0;
+		transition: 300ms all;
+	}
+
+	.button_players {
+		color: white;
+		font-size: 20px;
+		border: solid 2px white;
+		text-decoration: none;
+		padding: 10px;
+		transition: 300ms all;
+	}
+
+	.button_players:hover {
+		color: black;
+		background-color: white;
+		transition: 300ms all;
+	}
+
+	#J1 {
+		margin-right: 10px;
+	}
+
+	#J2 {
+		margin-left: 10px;
+	}
+
+	#text_intro {
+		color: white;
+		padding: 25px;
+		padding-top: 70px;
+	}
+
+	.fp-controlArrow {
+		display: none;
+	}
+
+	body {
+	margin: 0;
+	padding: 0;
+}
+
+#fond {
+	background: #0B1228;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-animation: animation-opacity 8s linear;
+	z-index: 9999999999999999999999;
+	opacity: 0;
+}
+
+#loader {
+	background: #61B7AD;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+	top: 100%;
+	-webkit-animation: animation 4s linear;
+	z-index: 999999999999;
+}
+
+@-webkit-keyframes animation {
+	0% {
+		top: 100%;
+	}
+	
+	40% {
+		top: 0%;
+	}
+	
+	50% {
+		top: 0%;
+	}
+	
+	60% {
+		top: 0%;
+	}
+	
+	100% {
+		top: -100%;
+	}
+}
+
+@-webkit-keyframes animation-opacity {
+	0% {
+		opacity: 1;
+	}
+	
+	40% {
+		opacity: 1;
+	}
+	
+	60% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}
+
+/* RESPONSIVE */ 
+
+@media screen and (max-width: 800px) {
+  body {
+  	display: none;
+  }
+}
+
+
+#interligne {
+	margin-top: -50px;
+	line-height: 60px;
+	color: white;
+}
+
+.texte_rules {
+	color: white;
+	line-height: 30px;
+	padding-top: 30px;
+}
+
+#boutton_chose {
+	position: relative;
+	top: 20px;
+}
+	

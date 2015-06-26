@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Projet Algo</title>
+	<meta name="author" content="GODS" />
+	<meta name="description" content="GODS est un jeu crée dans le cadre d'un projet en algo" />
+	<meta name="keywords"  content="jeu, algo, projet, hetic" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+</head>
+<body>
+<div id="fond"></div>
+<div id="loader"></div>
+	<div id="header">
+		<a href="#" id="team">équipe</a>
+		<a href="#" id="home">jouer</a>
+		<a href="#" id="click_logo">
+			<img id="logo" src="imgs/logo.png"> 
+			<img id="logo_black" src="imgs/logo_black.png"> 
+		</a>
+		<a href="#" id="rules">règles</a>
+	</div>
+	<div id="fullpage">
+		<div class="section" id="section1">
+		    <div class="slide" id="slide1">
+		    	<div id="popup_team">
+			    	<div id="pos_member">
+			    		<div id="member">
+				    		<img class="photo" src="imgs/mathilde-1.jpg">
+				    			<h2 class="name">Mathilde Chanthapanya</h2>
+				    		<p class="role">Responsable communication<p>
+			    		</div>p
+			    		<div id="member">
+				    		<img class="photo" src="imgs/clement-1.jpg">
+				    			<h2 class="name">Clément Saulnier</h2>
+				    		<p class="role">Design / Intégration<p>
+			    		</div>
+			    		<div id="member">
+				    		<img class="photo" src="imgs/aurelien-1.jpg">
+				    			<h2 class="name">Aurélien Marrast</h2>
+				    		<p class="role">Chef de projet<p>
+			    		</div>
+				    	<div id="member">
+				    		<img class="photo" src="imgs/simon.jpg">
+				    			<h2 class="name">Simon Schreiber</h2>
+				    		<p class="role">Développeur<p>
+				    	</div>
+				    	<div id="member">
+				    		<img class="photo" src="imgs/victor.jpg">
+				    			<h2 class="name">Victor Gossioux</h2>
+				    		<p class="role">Responsable communication<p>
+				    	</div>
+				    </div>
+		    	</div>
+				<img id="nuage_down_left" src="imgs/nuage_down_R.png">
+		    </div>
+		    <div class="slide" id="slide2">
+		    	<div id="popup">
+		    		<p id="text_intro">
+		    			<p id="interligne"><strong>Bienvenue</strong> sur SushiGo, un jeu de stratégie et de plaisir asiatique ancestral remis à l'ordre du jour. Seul(e) ou à plusieurs, venez tester vos limites et mener à la baguette ceux qui se frotteront à vous !</p>
+		    		</p>
+		    		<div id="boutton_chose">
+			    		<a href="#" class="button_players" id="J1">1 JOUEUR</a>
+			    		<a href="#" class="button_players" id="J2">2 JOUEURS</a>
+			    	</div>
+		    		<a href="#" id="play">PLAY</a>
+		    	</div>
+		    	<img id="nuage_1" src="imgs/nuage-1.png">
+				<img id="nuage_2" src="imgs/nuage-2.png">
+				<img id="nuage_3" src="imgs/nuage-3.png">
+		    	<div id="anim_nuage">
+		    		<img width="300" id="animation_nuage_1" src="imgs/nuage_magique.png">
+		    		<img width="200" id="animation_nuage_2" src="imgs/nuage_magique.png">
+		    		<img width="250" id="animation_nuage_3" src="imgs/nuage_magique.png">
+		    	</div>
+		    </div>
+		    <div class="slide" id="slide3">
+		    	<div id="popup_rules">
+		    		<p class="texte_rules">Chacun pose une pierre blanche ou noire et doit manger le plus grand nombre possible de pierres adversaires. Lorsqu’aucun des joueurs ne peut plus jouer sonne la fin de la partie.<br/><br/>
+
+					<strong>À PLUSIEURS :</strong><br/>
+					Pour désigner le premier joueur à commencer, un des deux joueurs doit deviner si l'autre tient un nombre pair ou impair dans sa main, en posant deux pierres noires (impair) ou une seule (pair). Si le joueur trouve juste, alors, il devient Noir et commence la partie. <br/><br/>
+
+					<strong>SEUL :</strong><br/>
+					Le joueur commence en premier</p>
+		    	</div>
+		    	<img id="nuage_down_right" src="imgs/nuage_down.png">
+		    </div>
+		</div>
+		<div class="section" id="section0"><h1>2</h1></div>
+	</div>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/site.js"></script>
+
+</body>
+</html>

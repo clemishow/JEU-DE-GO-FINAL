@@ -1,0 +1,56 @@
+//Tableau qui stock les coups jouables intéressant 
+//function qui voit si la case connecte un pattern à un autre et de combien
+//function qui retourne le nombre de case libre d'un patern et le nombre d libertés par cases
+//function qui analyse le territoire et les zones d'influences
+//function qui calcul la durabilité de vie en fonction du bord
+//function analyse du dernier coup joué
+var tabIA=new Array();
+var stockCase;
+var CheckPattern=new Array();
+var IA=2;
+var tab5;
+
+function initialisationIA()
+{
+	for (var i = 0; i < d; i++) 
+	{
+		tabIA[i]=new Array();
+		CheckPattern[i]=new Array();
+		
+
+		for (var j = 0; j <  j++) 
+		{
+			tabIA[i][j]=new Analyse();
+			CheckPattern[i][j]=false;
+			
+		}
+	}
+
+}
+
+function Analyse () //va me servir à mettre plusieurs information dans la même case d'un tableau
+ {
+    
+    this.priority=0;
+    this.defend=0;
+    this.liberty=0;
+      
+
+}
+
+function checkAll()
+{
+	for (var i = 0; i < d; i++) 
+	{
+		for (var j = 0; j < d j++) 
+		{
+			if (tab1[i][j]!=false&&CheckPattern[i][j]==false)
+			{
+				Pattern(i,j,tab1[i][j]);
+			}
+		}
+	}
+}
+
+
+

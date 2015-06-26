@@ -1,0 +1,287 @@
+.cell-2 {
+  display: inline-block;
+  margin-right: 14.5px;
+  height: 60px;
+  width: 60px;
+  background-size: 100%;
+  opacity: 0.5;
+  transition : all 0.5s ease-in;
+}
+
+#container1-2 {
+  background-image: url('../imgs/plateauGo2.png');
+  background-size: 100%;
+  height: 700px;
+  width: 700px;
+  top: -400px;
+}
+
+#game {
+  position: relative;
+  top:5px;
+}
+
+#bouttons {
+  margin-top: -300px;
+}
+
+#play {
+  margin: 10px;
+  background-color :#2980b9;
+  text-align:  center;
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  color: #fff;
+  margin: auto;
+ }
+
+ .row-2 {
+  margin-bottom: 25px;
+  position: relative;
+  top:13px;
+  left: 17px;
+  width: 100%;
+  height: 50px;
+}
+
+.cell {
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 16.5px;
+  height: 20px;
+  width: 20px;
+  opacity: 0.5;
+  transition : all 0.5s ease-in;
+}
+
+#container1 {
+  background-image: url('../imgs/plateauGo2.png');
+  background-size: 100%;
+  height: 700px;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: -31%; 
+}
+
+ .row {
+  margin-bottom: 21.5px;
+  position: relative;
+  top: 6px;
+  left: 11px;
+  width: 100%;
+  height: 15px;
+}
+
+
+/* CLOUDS */
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: contrast(120%);
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(1600px at 70% 120%, rgba(33, 39, 80, 1) 10%, #020409 100%);
+}
+
+.content {
+  width: inherit;
+  height: inherit;
+}
+
+#universe {
+  width: 100%;
+  height: 100%;
+}
+
+#footerContent {
+  font-family: sans-serif;
+  font-size: 110%;
+  color: rgba(200, 220, 255, .3);
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 20px;
+  text-align: center;
+  z-index: 20;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0px;
+  height: 300px;
+  width: 100%;
+}
+
+#scene {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -800px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(200, 220, 255, 1);
+  opacity: .7;
+  transition: opacity .4s ease;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.boutton {
+  background-color: transparent;
+  text-decoration: none;
+  border: solid 2px white;
+  border-radius: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 300ms all;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.boutton:hover {
+  color: black;
+  background-color: white;
+  transition: 300ms all;
+}
+
+/* HAMBURGER MENU */
+
+#header {
+    position:fixed;
+    height: 100%;
+    display:block;
+    width: 120px;
+    background: #1E2731;
+    z-index:9;
+    float: left;
+    text-align:center;
+    color: #f2f2f2;
+    padding: 20px 0 0 0;
+  }
+  #header{
+    top:0px;
+  }
+
+#container_hamburger {
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  right: 18px;
+}
+
+#hamburger_1 {
+  width: 75px;
+  height: 5px;
+  background: white;
+  transition: 300ms all;
+  position: absolute;
+  top: 7px;
+  left: 40px;
+  border-radius: 20px;
+}
+
+#hamburger_2 {
+  width: 75px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  transition: 300ms all;
+  border-radius: 20px;
+}
+
+#hamburger_3 {
+  width: 75px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 43px;
+  left: 40px;
+  transition: 300ms all;
+  border-radius: 20px;
+}
+
+.logo_effect {
+  opacity: 0.7;
+  transition: 300ms all;
+}
+
+.logo_effect:hover {
+  opacity: 1;
+  transition: 300ms all;
+}
+
+#logo_home, #logo_grid, #logo_restart, #logo_next, #logo_score {
+  transition: 300ms all;
+}
+
+#logo_home {
+  position: relative;
+  top: 100px;
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+}
+
+#logo_grid {
+  position: relative;
+  top: 130px;
+  cursor: pointer;
+}
+
+#logo_restart {
+  position: relative;
+  top: 160px;
+  cursor: pointer;
+}
+
+#logo_score {
+  position: relative;
+  top: 220px;
+  cursor: pointer;
+}
+
+#logo_next {
+  position: relative;
+  top: 190px;
+  cursor: pointer;
+}
+.player_score_design {
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  position: relative;
+  top: 230px;
+  transition: 300ms all;
+}
+
+#text_logo {
+  color: white;
+  font-family: 'Open Sans';
+  position: absolute;
+  top: 110px;
+}
